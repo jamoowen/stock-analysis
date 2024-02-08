@@ -1,0 +1,11 @@
+Stock price comparison
+
+Current date: 2024-02-07
+Start date: 2022-02-08
+
+Greatest relative increase:  Eli Lilly and Company (LLY)
+Growth %:  202.36
+Gross profit: $ 20235.5 
+
+Initial total investment:  1000000.0
+Current total investment (growth):  1091285.04
