@@ -17,6 +17,7 @@ python3 -m  pipreqs.pipreqs
     dotenv (for api key only)
 
 How to run:
+    0) Clone Repo
     1) Install all dependencies
     2) Sign up to Polygon API and get an API key 
     3) Save API key to a .env file in the root directory 
