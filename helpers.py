@@ -10,6 +10,22 @@ def round_cols(df, cols):
   return df
 
 def request_prices_polygon(stocks_dict, date_period, api_key):
+  """
+    Requests daily closing prices for stocks from the Polygon API for a specified date period.
+
+    Parameters:
+    - stocks_dict (list): A list of dictionaries containing information about stocks, including the symbol.
+    - date_period (str): The date for which prices are requested in the format 'YYYY-MM-DD'.
+    - api_key (str): The API key for accessing the Polygon API.
+
+    Returns:
+    - list: A modified list of dictionaries containing the requested prices added as 'date' and 'price' keys.
+
+    
+    Example:
+    request_prices_polygon(stocks, '2022-06-01', 'your_api_key')
+    # Returns dict with stock prices for the given date
+    """
   
   modified_dict =stocks_dict.copy()
 
@@ -52,6 +68,20 @@ def request_prices_polygon(stocks_dict, date_period, api_key):
 
 
 def compare_share_prices(df, current_date, old_date):
+    """
+    Compares the share prices across two given dates and writes the comparison results to CSV and text files.
+
+    Parameters:
+    - df (DataFrame): A PySpark DataFrame containing the share price data.
+    - current_date (str): The current date for comparison.
+    - old_date (str): The old date for comparison.
+
+    Returns:
+    - DataFrame: A PySpark DataFrame containing the comparison analysis.
+
+    Example:
+    compare_share_prices(df, "2024-02-06", "2024-02-01")
+    """
     print("Comparing the share prices across dates")
     max_date = df.select(psf.max("date")).collect()[0][0]
     min_date = df.select(psf.min("date")).collect()[0][0]

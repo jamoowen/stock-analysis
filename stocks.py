@@ -11,6 +11,8 @@ import os
 from helpers import request_prices_polygon, round_cols, compare_share_prices
 from pathlib import Path
 
+# this is the main file which should be run to produce outputs
+# the function which makes the api requests and is found within helpers.py, along with the function to compare prices
 
 spark = SparkSession.builder.getOrCreate()
 # set spark write to dynamic so that we can append data without worrying about adding duplicates through a rerun

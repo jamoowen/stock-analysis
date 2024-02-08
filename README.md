@@ -30,7 +30,7 @@ OUTPUTS:
        The file shows the value of the Investment at the latest period and the change in share prices
     3) results.txt -> This text file contains the answers to the questions
 
-**there is also a .ipynb notebook with the same code, which I used for testing
+**there two .ipynb notebook with the same code, which I used for testing (can be ignored)
 
 -------------- Questions
 1. Create a free account with Polygon https://polygon.io/docs/stocks/getting-started, Polygon provides financial market data.
