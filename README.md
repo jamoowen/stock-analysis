@@ -10,7 +10,6 @@ If data has already been pulled, it will compare the latest date and if new data
 All requests complete ~40 mins
 
 Dependencies:
-python3 -m  pipreqs.pipreqs
     Pyspark
     Pandas
     Java 8+ (for pyspark)
